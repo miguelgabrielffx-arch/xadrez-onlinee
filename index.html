@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎮 Xadrez Online</title>
+
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #ff4d6d;
+  max-width: 600px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff1e4d;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  font-family: monospace;
+  white-space: pre;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>♟️ Xadrez Online</h1>
+<p>Clique para iniciar o jogo...</p>
+
+<button onclick="startGame()">Iniciar Jogo</button>
+
+<div id="game" class="hidden">
+<div class="loading">
+█░░░░░░░░ 10%
+███░░░░░░ 30%
+██████░░░ 70%
+█████████ 100%
+
+Erro detectado...
+</div>
+
+<p>
+O verdadeiro jogo que eu tô jogando é tentar conquistar você todos os dias 🤍
+</p>
+
+<p>
+Você achou que era xadrez...  
+Mas na verdade é meu coração jogando por você.
+</p>
+
+<h2>Eu te amo 🤍</h2>
+
+<p>
+Se esse fosse realmente um jogo,  
+a única coisa que eu ia querer ganhar…  
+<strong>é você.</strong>
+</p>
+
+</div>
+
+</div>
+
+<script>
+function startGame() {
+  document.getElementById("game").classList.remove("hidden");
+}
+</script>
+
+</body>
+  </html>
